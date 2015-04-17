@@ -23,10 +23,7 @@ MSPrimitivesView is available through [CocoaPods](http://cocoapods.org) from my 
 
 ```ruby
 source 'https://github.com/WezSieTato/MSPodsSpec.git'
-```
 
-
-```ruby
 pod "MSPrimitivesView"
 ```
 
