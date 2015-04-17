@@ -1,0 +1,17 @@
+PODS:
+  - FBSnapshotTestCase (1.6)
+  - MSPrimitivesView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MSPrimitivesView (from `../`)
+
+EXTERNAL SOURCES:
+  MSPrimitivesView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
+  MSPrimitivesView: 01be0fc801260906c9b971a5ecf8ad3e38c57667
+
+COCOAPODS: 0.35.0

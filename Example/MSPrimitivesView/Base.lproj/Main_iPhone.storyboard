@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ILi-7m-uz7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Rounded Rect Controller-->
+        <scene sceneID="lAc-Ul-aEH">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="MSViewController" sceneMemberID="viewController">
+                <viewController id="ILi-7m-uz7" customClass="MSRoundedRectController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="D5b-gr-t5z"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Rm-57-16K"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="bgW-J6-amf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpS-e9-EU3" customClass="MSRoundedRectView">
+                                <rect key="frame" x="69" y="28" width="182" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="3OX-hj-0dH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-2A-6GL" customClass="MSRoundedRectView">
+                                <rect key="frame" x="20" y="432" width="280" height="116"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="fsx-im-Yfy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeftCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topRightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rectColor">
+                                        <color key="value" red="1" green="0.21099560389999999" blue="0.1968200598" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeftCorner" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PAQ-2A-6GL" firstAttribute="leading" secondItem="bgW-J6-amf" secondAttribute="leading" constant="20" id="GhU-AC-MC3"/>
+                            <constraint firstAttribute="trailing" secondItem="PAQ-2A-6GL" secondAttribute="trailing" constant="20" id="PPJ-WU-fv8"/>
+                            <constraint firstItem="bpS-e9-EU3" firstAttribute="leading" secondItem="bgW-J6-amf" secondAttribute="leading" constant="69" id="g7V-Oc-xYe"/>
+                            <constraint firstItem="8Rm-57-16K" firstAttribute="top" secondItem="PAQ-2A-6GL" secondAttribute="bottom" constant="20" id="lWT-cG-Z6O"/>
+                            <constraint firstAttribute="trailing" secondItem="bpS-e9-EU3" secondAttribute="trailing" constant="69" id="t2w-DH-BAL"/>
+                            <constraint firstItem="bpS-e9-EU3" firstAttribute="top" secondItem="D5b-gr-t5z" secondAttribute="bottom" constant="8" id="tLI-Pd-r2y"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLb-PY-YnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="954" y="390"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
