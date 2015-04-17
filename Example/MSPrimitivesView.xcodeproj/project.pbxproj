@@ -66,6 +66,7 @@
 		CE98CD208EE15F558D0D6876 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D3C49F961AE14BE900A9E085 /* MSRoundedRectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRoundedRectController.h; sourceTree = "<group>"; };
 		D3C49F971AE14BE900A9E085 /* MSRoundedRectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRoundedRectController.m; sourceTree = "<group>"; };
+		D3C49FA01AE164F000A9E085 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		DA54306FB6BF5952D11FCBCD /* Pods-MSPrimitivesView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSPrimitivesView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSPrimitivesView/Pods-MSPrimitivesView.release.xcconfig"; sourceTree = "<group>"; };
 		F84AB043F93E7208C0A27AD8 /* MSPrimitivesView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSPrimitivesView.podspec; path = ../MSPrimitivesView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +183,7 @@
 				F84AB043F93E7208C0A27AD8 /* MSPrimitivesView.podspec */,
 				1CA5C6F8A053EE4C31C22CA7 /* README.md */,
 				CE98CD208EE15F558D0D6876 /* LICENSE */,
+				D3C49FA01AE164F000A9E085 /* .travis.yml */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
