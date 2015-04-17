@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MSPrimitivesView', :exclusive => true do
+  pod "MSPrimitivesView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "MSPrimitivesView", :path => "../"
+
+  pod 'FBSnapshotTestCase'
+end
